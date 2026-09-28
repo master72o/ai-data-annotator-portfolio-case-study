@@ -1,0 +1,10 @@
+{"prompt_id": "RLHF-001", "prompt": "Write a Python function to check if a string is a palindrome. Do not use string slicing [::-1].", "chosen": "def is_palindrome(s: str) -> bool:
+    cleaned = ''.join(c.lower() for c in s if c.isalnum())
+    left, right = 0, len(cleaned) - 1
+    while left < right:
+        if cleaned[left] != cleaned[right]:
+            return False
+        left += 1
+        right -= 1
+    return True", "rejected": "def is_palindrome(s):
+    return s.lower() == s[::-1].lower()", "rationale": "Rejected response violated negative constraint by using string slicing [::-1]. Chosen response used two-pointer technique cleanly.", "chosen_score": 5, "rejected_score": 1}

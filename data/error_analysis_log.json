@@ -1,0 +1,16 @@
+[
+  {
+    "item_id": "SFT-ERR-01",
+    "error_type": "Instruction Omission",
+    "description": "Used [::-1] despite negative constraint",
+    "annotator": "ANN-02",
+    "status": "Fixed"
+  },
+  {
+    "item_id": "SFT-ERR-02",
+    "error_type": "Formatting Defect",
+    "description": "Missing python code block tag",
+    "annotator": "ANN-07",
+    "status": "Fixed"
+  }
+]
